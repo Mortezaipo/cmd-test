@@ -1,0 +1,14 @@
+command: python -c "import json;x=json.loads({});print(x.number)"
+
+workers: 3
+
+entries:
+  -
+    - "0098[0-9]{4}21"
+    - "\d+"
+  -
+    - "0098INVALID"
+    - "*raise*"
+  -
+    - "3243242342"
+    - "3243242342"

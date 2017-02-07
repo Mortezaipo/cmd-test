@@ -1,0 +1,4 @@
+colorclass==2.2.0
+PyYAML==3.12
+rstr==2.2.6
+terminaltables==3.1.0
