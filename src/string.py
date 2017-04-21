@@ -1,13 +1,16 @@
 """Main string library to generate and check strings."""
 import re
+
 import rstr
+
 import show
-import config
+import const
 
 
 class Strings:
     """Strings methods to generate strings and test match for reverse check."""
 
+    @staticmethod
     def generator(pattern, length=0):
         """Generate string based on regex pattern.
 
@@ -20,12 +23,13 @@ class Strings:
         """
         try:
             re.compile(pattern)
-        except:
-            show.fprint(config.ERROR, 1,
+        except re.error:
+            show.fprint(const.ERROR, 1,
                         "Invalid regex pattern: {}".format(pattern))
         length = len(pattern) if length == 0 else length
         return rstr.rstr(pattern, length)
 
+    @staticmethod
     def match(pattern, text):
         """Check string with pattern.
 
