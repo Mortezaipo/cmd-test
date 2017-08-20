@@ -16,7 +16,6 @@ Create a config file `myconf.json`
     ]
   }]
 }
-
 ```
 Then run `cmd-test`:
 ```commandline
@@ -34,22 +33,26 @@ cmd-test myconf.json --report table --color
 
 ####Key patterns in input/output:
 
-| Key   | Description                      |
-| :---: | ---                              |
-| `R`   | row data                         |
-| `X`   | regular expression (regex)       |
-| `M`   | math operation                   |
-| `T`   | other threads input/output       |
-| `P`   | other process input/output       |
-| `D`   | distributed process input/output |
+| Key  | Description                      |
+| :--: | -------------------------------- |
+| `R`  | row data                         |
+| `X`  | regular expression (regex)       |
+| `M`  | math operation                   |
+| `T`  | other threads input/output       |
+| `P`  | other process input/output       |
+| `D`  | distributed process input/output |
 
 ####List of exit codes:
 
-| Exit code | Description                         |
-| :---:     | ---                                 |
-| `0`       | Success                             |
-| `1`       | Missing config file                 |
-| `2`       | Config file not found               |
-| `3`       | Config file has no read permission  |
-| `4`       | Config file content is invalid      |
-| `5`       | Config file structure is not valid  |
+| Exit code | Description                        |
+| :-------: | ---------------------------------- |
+|    `0`    | Success                            |
+|    `1`    | Missing config file                |
+|    `2`    | Config file not found              |
+|    `3`    | Config file has no read permission |
+|    `4`    | Config file content is invalid     |
+|    `5`    | Config file structure is not valid |
+
+**CMD Test Structure:**
+
+![cmd test structure](cmd-test-structure.png)
