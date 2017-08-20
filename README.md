@@ -31,7 +31,7 @@ cmd-test myconf.json --report table --color
 `io`: list of sample input/output which will be tested on the command:
 `input`, `output`, `try_times`, `try_on_failed`
 
-####Key patterns in input/output:
+#### Key patterns in input/output:
 
 | Key  | Description                      |
 | :--: | -------------------------------- |
@@ -42,7 +42,7 @@ cmd-test myconf.json --report table --color
 | `P`  | other process input/output       |
 | `D`  | distributed process input/output |
 
-####List of exit codes:
+#### List of exit codes:
 
 | Exit code | Description                        |
 | :-------: | ---------------------------------- |
