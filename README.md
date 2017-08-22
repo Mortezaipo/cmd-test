@@ -1,4 +1,4 @@
-# cmd-test
+# Command Test
 Run sequential or parallel commands and check their outputs.
 
 #### Sample config:
